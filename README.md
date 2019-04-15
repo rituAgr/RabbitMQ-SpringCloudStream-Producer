@@ -34,6 +34,6 @@ Content-Type: application/json
 ###Note:
 
 1. All properties for pcf are binded by vcap.service, but the port because it was unable to convert String to Int over pcf.
-2. For looking at consumer side look for ```RabbitMQ-SpringCloudStream-Producer``` repo.
+2. For looking at consumer side look for ```RabbitMQ-SpringCloudStream-Consumer``` repo.
 
  
