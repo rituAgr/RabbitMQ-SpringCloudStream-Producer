@@ -1,0 +1,9 @@
+---
+applications:
+- name: rabbit-producer
+  path: build/libs/rabbit-producer-0.0.1-SNAPSHOT.jar
+  memory: 1024M
+  instances: 1
+  random-route: true
+  services:
+  - rabbit-test

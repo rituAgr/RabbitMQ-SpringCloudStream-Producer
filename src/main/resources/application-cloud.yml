@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: demo-queue
+          group: producer-consumer
+          binder: rabbit
+      binders:
+        rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: ${vcap.services.p-rabbitmq.amqp.host}
+                port: 5672
+                username: ${vcap.services.p-rabbitmq.amqp.username}
+                password: ${vcap.services.p-rabbitmq.amqp.password}
